@@ -7,23 +7,23 @@ public class PalindromeDemo {
 
     public static boolean isPalindrome(String input){
         boolean debug = false;
-        String lower = input.toLowerCase();
+        final String lower = input.toLowerCase();
         if (debug) {
             System.out.printf("\nlower=\"%s\"\n", lower);
         }
-        String noSpaces = PalindromeHelper.keepOnlyLetters(lower);
+        final String noSpaces = PalindromeHelper.keepOnlyLetters(lower);
         if (debug) {
             System.out.printf("noSpace=\"%s\"\n", noSpaces);
         }
-        char[] normalArray = PalindromeHelper.stringToArray(noSpaces);
+        final char[] normalArray = PalindromeHelper.stringToArray(noSpaces);
         if (debug) {
             System.out.printf("normalArray=%s\n", Arrays.toString(normalArray));
         }
-        char[] reversedArray = PalindromeHelper.reverseArray(normalArray);
+        final char[] reversedArray = PalindromeHelper.reverseArray(normalArray);
         if (debug) {
-            System.out.printf("reversedArray=%s\n", Arrays.toString(normalArray));
+            System.out.printf("reversedArray=%s\n", Arrays.toString(reversedArray));
         }
-        String reversed = PalindromeHelper.arrayToString(reversedArray);
+        final String reversed = PalindromeHelper.arrayToString(reversedArray);
         if (debug) {
             System.out.printf("reversed=\"%s\"\n", reversed);
         }
