@@ -5,8 +5,6 @@ import java.util.Scanner;
 
 public class PalindromeDemo {
 
-
-
     public static boolean isPalindrome(String input){
         boolean debug = false;
         String lower = input.toLowerCase();
